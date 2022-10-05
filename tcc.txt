@@ -1,0 +1,59 @@
+INTRODUÇÃO [
+    - falar generico sobre o tema
+    dados e a informação na net
+    recuperação da informação na net
+    ferramentas de busca
+    nlp (linguagem humana x maquina)
+    algoritmos e text classification
+        o que é 
+        como funciona
+        para o que pode ser utilizada
+    sistemas de recomendação (busca)
+    busca por obras de anime (citar grande variedade, dificuldade de encontrar determinados titulos) 
+
+    - motivação
+    assim como filmes e séries, animes são uma categoria de conteúdo que pode ser pesquisado e consumido
+    através da internet, por meio de serviços de streaming e sites. ao pesquisar por um determinado termo
+    relacionado ao conteudo de uma obra, o usuário espera receber uma ocorrência que atenda aos requisitos
+    da sua busca, que neste caso, seria a obra que mais se adequa ao resultado da busca. 
+
+    - justificativa
+    a combinação de técnicas de classificação de texto podem auxiliar na criação de um sistema capaz de associar
+    o conteúdo da busca à base de textos que desejamos mapear, e recomendar o resultado que satisfaça à pesquisa 
+    do usuário.
+
+    uso das tecnicas para construção de um sistema de recomendações de animes
+    a precisão do resultado de um buscador é diretamente influenciada pela eficiencia do modelo de classificação
+    utilizado, uma vez que será a base para associação com a pesquisa do usuário.
+
+    - objetivos
+    este trabalho tem como finalidade a criação de um sistema de recomendação de animes, utilizando técnicas de 
+    pre processamento e classificação de textos, a partir de uma base de dados disponibilizada na plataforma kagle, 
+    uma plataforma ... . A base de dados contém (conteudo da base). com isso será criado o modelo de classificação
+    para recomendação de animes baseado na descrição do usuário, e avaliado sua eficiencia na recuperação por meio
+    de ... (ferramentas)
+]
+
+REFERENCIAL TEÓRICO [
+    - recuperação de informação
+    fontes de dados
+    pre processamento de dados
+    importancia
+
+    - text classification
+    o que é 
+    como funciona
+    para o que pode ser utilizada
+]
+
+TRABALHOS RELACIONADOS [
+https://www.fatecourinhos.edu.br/retec/index.php/retec/article/view/257/233
+]
+
+METODOLOGIA [
+Base de dados do kagle
+    formato original para um pre formato conhecido
+Pre processamento de dados com javascript
+Aplicação da técnica para criação do vocabulário de palavras com python
+avaliação de eficiencia do modelo
+]

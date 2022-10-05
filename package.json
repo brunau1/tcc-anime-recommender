@@ -1,0 +1,21 @@
+{
+  "name": "tcc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "content-based-filtering": "^1.0.1",
+    "csv-reader": "^1.0.9",
+    "nlp-toolkit": "^0.2.6",
+    "num-words": "^1.2.2",
+    "tiny-tfidf": "^0.9.1",
+    "vector-space-model-similarity": "^1.0.161"
+  }
+}
