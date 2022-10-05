@@ -60,9 +60,6 @@ const getDocuments = async () => {
 
   return currentDocuments;
 };
-// implementar o modulo do tiny-tfidf
-
-// processar os textos em pequenos pacotes para evitar o erro de memoria
 
 getDocuments().then((documents) => {
   for (let i = 0; i < documents.content.length; i++)
