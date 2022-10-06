@@ -42,6 +42,8 @@ const getDocuments = async () => {
     const description = rowContent[2];
 
     // adiciona apenas se o anime não estiver no dataset
+    // e se a descrição não estiver vazia
+    // para evitar conteúdo duplicado ou vazio
     if (description && !documents.content.has(description)) {
       documents.names.push(anime);
       documents.content.add(description);
@@ -54,6 +56,7 @@ const getDocuments = async () => {
   };
 
   // inclui o nome do anime no conteúdo do texto
+  // para facilitar a busca
   currentDocuments.content = currentDocuments.content.map((content, index) => {
     return `${currentDocuments.names[index]} ${content}`;
   });
