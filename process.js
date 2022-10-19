@@ -42,9 +42,10 @@ const getTopMeasures = () => {
   // pega os 10 primeiros elementos da lista ordenada
   const topMeasures = sortedMeasures.slice(0, 10);
   // mostra os 10 primeiros elementos da lista ordenada
+  console.log("Top measures: ");
   topMeasures.forEach((measure) => {
     console.info(
-      "document #" + documents.names[measure[0]] + " | measure = " + measure[1]
+      "Anime #" + documents.names[measure[0]] + " | measure = " + measure[1]
     );
   });
 };
