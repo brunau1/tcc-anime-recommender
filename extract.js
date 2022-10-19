@@ -56,7 +56,7 @@ const getDocuments = async () => {
   };
 
   // inclui o nome do anime no conteúdo do texto
-  // para facilitar a busca
+  // para match de buscas por nome da obra
   currentDocuments.content = currentDocuments.content.map((content, index) => {
     return `${currentDocuments.names[index]} ${content}`;
   });
