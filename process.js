@@ -22,11 +22,16 @@ const createProcess = (documentCount = 1000) => {
 };
 
 const recommender = (query, documentCount) => {
+  console.info("Creating process...");
+
   const tfidf = createProcess(documentCount);
+  console.warn("Total documents: ", documentCount);
   // calcula as medidas de similaridade entre a consulta e os documentos
   tfidf.tfidfs(query, registerMeasure);
   // salva as medidas de similaridade em um arquivo
   Fs.writeFileSync("measures.json", JSON.stringify(measures), "utf8");
+
+  getTopMeasures();
 };
 
 const getTopMeasures = () => {
@@ -50,7 +55,6 @@ const main = () => {
   const documentCount = documents.content.length; // max = documents.content.length
 
   recommender(query, documentCount); 
-  getTopMeasures();
 };
 
 main();
