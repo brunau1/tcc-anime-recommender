@@ -21,6 +21,7 @@ const createProcess = (documentCount = 1000) => {
   return tfidf;
 };
 
+// TODO: cosine similarity
 const recommender = (query, documentCount) => {
   console.info("Creating process...");
 
