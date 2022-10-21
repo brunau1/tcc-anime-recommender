@@ -34,6 +34,8 @@ const recommender = (query, documentCount) => {
   getTopMeasures();
 };
 
+// TODO: considerar notas de avaliação de usuários e 
+// e ranking da obra na recomendação
 const getTopMeasures = () => {
   // recupera a lista de estimativas salvas
   const measures = JSON.parse(Fs.readFileSync("measures.json", "utf8"));
@@ -51,7 +53,7 @@ const getTopMeasures = () => {
 };
 
 const main = () => {
-  const queryText = "a boy and his brother lost their mother";
+  const queryText = "two brothers enter army to become alchemists";
   const query = clearDocument(queryText);
   const documentCount = documents.content.length; // max = documents.content.length
 
