@@ -1,7 +1,7 @@
 import * as nlpToolkit from "natural";
 
 import numWords from "num-words";
-import stopwords from "./stopwords.js";
+import stopwords from "../public/stopwords.js";
 
 const clearDocument = (document) => {
   const tokenizer = new nlpToolkit.WordTokenizer();
