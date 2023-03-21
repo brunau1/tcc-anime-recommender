@@ -42,15 +42,15 @@ function createDictionary() {
   }
 
   // lista de termos unicos
-  const uniqueTerms = new Set();
+  const uniqueTerms = {}
 
    // percorre todos os termos da lista
   for (const termInfo of currentTerms) {
     // verifica se o termo já foi adicionado
-    if (!uniqueTerms.has(termInfo.term)) {
+    if (!uniqueTerms[termInfo.term]) {
       // adiciona o termo na lista de controle
       // para evitar repetições
-      uniqueTerms.add(termInfo.term);
+      uniqueTerms[termInfo.term] = true;
       // adiciona o termo e o IDF calculado, respectivamente
       dictionary.terms.push(termInfo.term);
       dictionary.idfs.push(termInfo.idf);
