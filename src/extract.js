@@ -1,5 +1,6 @@
 import CsvReadableStream from "csv-reader";
 import Fs from "fs";
+import { createDocPacksWithRealIndex } from "./helper.js";
 import clearDocument from "./preprocess.js";
 
 function extractFileContent(fileName = "animes.csv") {
@@ -71,17 +72,9 @@ function getDocuments(csvContent) {
 function separateDocuments(documents) {
   console.log("Separating documents...");
   console.time("separateDocuments");
-  const documentsPackages = new Array();
 
-  for (let i = 0; i < documents.content.length; i += 500) {
-    console.log("Separating documents | part: ", i);
-    documentsPackages.push(documents.content.slice(i, i + 500));
-  }
-  console.log(
-    "Documents separated! | part lengths: ",
-    documentsPackages.map((pack) => pack.length),
-    "\n"
-  );
+  const packLength = 500;
+  const documentsPackages = createDocPacksWithRealIndex(documents, packLength);
 
   Fs.writeFileSync(
     "./public/docs-packages.json",

@@ -25,7 +25,7 @@ export function generateVectorModels() {
     console.log("Generating vector models | pack: ", packIndex);
 
     for (let i = 0; i < pack.length; i++) {
-      vectorModels[i] = generateVSMWithTfIdf(pack[i]);
+      vectorModels[i] = [pack[i][0], generateVSMWithTfIdf(pack[i][1])];
     }
     console.log("Saving vector models | pack length: ", vectorModels.length);
 
@@ -38,3 +38,4 @@ export function generateVectorModels() {
 
   console.timeEnd("generateVectorModels");
 }
+generateVectorModels();
