@@ -1,6 +1,6 @@
 import CsvReadableStream from "csv-reader";
 import Fs from "fs";
-import clearDocument from "./cleaner.js";
+import clearDocument from "./preprocess.js";
 
 function extractFileContent(fileName = "animes.csv") {
   const inputStream = Fs.createReadStream(fileName, "utf8");
@@ -27,7 +27,7 @@ function extractFileContent(fileName = "animes.csv") {
   });
 }
 
-async function getDocuments(csvContent) {
+function getDocuments(csvContent) {
   console.log("extract and format");
 
   const documents = {
@@ -35,13 +35,18 @@ async function getDocuments(csvContent) {
     content: new Array(),
   };
 
+  const uniqueTitles = new Set();
+  const uniqueDescriptions = new Set();
+
   for (const row of csvContent) {
     const title = String(row[1]);
     const description = String(row[2]);
 
     // adiciona apenas se o title
     // e a descrição não estiverem vazios
-    if (title && description) {
+    if (!uniqueTitles.has(title) && !!description) {
+      uniqueTitles.add(title);
+      uniqueDescriptions.add(description);
       // (description && !documents.content.has(description)) {
       documents.names.push(title);
       // inclui o nome do anime no conteúdo do texto
@@ -50,11 +55,44 @@ async function getDocuments(csvContent) {
     }
   }
 
+  console.log(
+    "unique titles: ",
+    uniqueTitles.size,
+    "unique descriptions: ",
+    uniqueDescriptions.size
+  );
+
   return documents;
 }
 
+// dividir em pacotes de 500
+// para não sobrecarregar a memória
+
+function separateDocuments(documents) {
+  console.log("Separating documents...");
+  console.time("separateDocuments");
+  const documentsPackages = new Array();
+
+  for (let i = 0; i < documents.content.length; i += 500) {
+    console.log("Separating documents | part: ", i);
+    documentsPackages.push(documents.content.slice(i, i + 500));
+  }
+  console.log(
+    "Documents separated! | part lengths: ",
+    documentsPackages.map((pack) => pack.length),
+    "\n"
+  );
+
+  Fs.writeFileSync(
+    "./public/docs-packages.json",
+    JSON.stringify(documentsPackages)
+  );
+
+  console.timeEnd("separateDocuments");
+}
+
 //execute
-(async () => {
+export async function extractAndSave() {
   const csvContent = await extractFileContent("./public/animes.csv");
   csvContent.splice(0, 1);
 
@@ -68,6 +106,7 @@ async function getDocuments(csvContent) {
   //   "| content: ",
   //   documents.content[0]
   // );
+  separateDocuments(documents);
 
   Fs.writeFileSync("./public/animes.json", JSON.stringify(documents));
 
@@ -76,4 +115,7 @@ async function getDocuments(csvContent) {
     documents.names.length,
     documents.content.length
   );
-})();
+
+  return;
+}
+extractAndSave();

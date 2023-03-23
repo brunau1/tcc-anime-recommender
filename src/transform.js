@@ -1,11 +1,25 @@
 import Fs from "fs";
 import { TfIdf } from "natural";
+import Path from "path";
 
-const documents = JSON.parse(Fs.readFileSync("./public/animes.json", "utf8"));
-const documentCount = 1000; // documents.content.length (10k ~ 1min));
+let documents = {};
+let documentCount = 0;
+
+const init = () => {
+   const dir = Path.resolve("./public/animes.json");
+   documents = JSON.parse(Fs.readFileSync(dir, "utf8"));
+   documentCount = documents.content.length; // (10k ~ 1min));
+};
+// lista de termos unicos com o IDF calculado
+const dictionary = {
+  terms: new Array(),
+  idfs: new Array(),
+};
+const currentTerms = new Array();
+
 // define um tamanho padrão para o conjunto de
 // documentos e cria o conjunto de documentos
-const createDocumentSet = () => {
+function createDocumentSet() {
   const set = new TfIdf();
   // adiciona o documento ao conjunto de documentos
   for (let i = 0; i < documentCount; i++) {
@@ -13,41 +27,48 @@ const createDocumentSet = () => {
   }
 
   return set;
-};
+}
 
 // cria o dicionario de termos a partir
 // do conjunto de documentos e salva em um json
 // com as medidas de IDF para cada termo
 // a lib será usada para calcular as medidas de IDF
 // para os termos unicos do dicionario
-function createDictionary() {
-  console.time("createDictionary");
+export function createListOfTerms() {
+  init();
+  console.time("createListOfTerms");
   // cria o dicionario com os documentos do dataset
   // pre processados
   const documentSet = createDocumentSet();
 
-  const currentTerms = new Array();
-
-  // lista de termos unicos com o IDF calculado
-  const dictionary = {
-    terms: new Array(),
-    idfs: new Array(),
-  };
-
-  // percorre todos os documentos para recuperar 
+  console.log("processing documents... | lenght: ", documentCount);
+  // percorre todos os documentos para recuperar
   // os termos e o IDF calculado
   for (let i = 0; i < documentCount; i++) {
+    console.log("listing terms | doc: ", i);
     const terms = documentSet.listTerms(i);
     currentTerms.push(...terms);
   }
 
-  // lista de termos unicos
-  const uniqueTerms = {}
+  console.log("Terms listed! Number of terms: ", currentTerms.length, "\n");
+  console.timeEnd("createListOfTerms");
+  return currentTerms;
+}
 
-   // percorre todos os termos da lista
+// cria o dicionario de termos unicos
+// com o IDF calculado
+export function createDictionary() {
+  init();
+  console.time("createDictionary");
+  // lista de termos unicos
+  const uniqueTerms = {};
+
+  console.log("making dictionary...");
+  // percorre todos os termos da lista
   for (const termInfo of currentTerms) {
     // verifica se o termo já foi adicionado
     if (!uniqueTerms[termInfo.term]) {
+      console.log("adding term: ", termInfo.term);
       // adiciona o termo na lista de controle
       // para evitar repetições
       uniqueTerms[termInfo.term] = true;
@@ -63,7 +84,7 @@ function createDictionary() {
   Fs.writeFileSync("./public/dictionary.json", JSON.stringify(dictionary));
 
   console.log(
-    "Dictionary created! Number of terms: ",
+    "Dictionary created! Number of unique terms: ",
     dictionary.terms.length,
     "\n"
   );
@@ -72,5 +93,3 @@ function createDictionary() {
 
   return dictionary;
 }
-
-createDictionary();
