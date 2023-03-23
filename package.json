@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "extract": "node src/extract.js",
     "transform": "node src/transform.js",
-    "generate": "node src/process.js",
+    "vectorize": "node src/process.js",
     "process": "node script.js",
     "search": "node src/recommender.js"
   },

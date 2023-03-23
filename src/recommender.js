@@ -5,44 +5,40 @@ import Fs from "fs";
 import { generateVSMWithTfIdf } from "./vectorizer.js";
 import { createDocPacksWithRealIndex } from "./helper.js";
 
-export function computeSimilarity(document = "", search = "") {
-  search = clearDocument(search);
+export function computeSimilarity(document = "", searchVector) {
   const documentVector = generateVSMWithTfIdf(document);
-  const searchVector = generateVSMWithTfIdf(search);
 
   return similarity(documentVector, searchVector);
 }
 // recomendar a partir dos documentos vetorializados salvos
-export function recommender(docs, search) {
+export function recommender(docs, searchVector) {
   console.log("Recommender");
-  console.log("search: ", search);
 
   const computedSimilarities = [];
 
   for (let i = 0; i < docs.content.length; i++) {
     console.log("Computing similarity | anime: ", i);
-    const measure = computeSimilarity(docs.content[i], search);
+    const measure = computeSimilarity(docs.content[i], searchVector);
     computedSimilarities.push([i, measure]);
   }
 
   return computedSimilarities;
 }
 
-export function syncRecommender(documentsPackages, search) {
+export function syncRecommender(documentsPackages, searchVector) {
   console.log("Recommender");
-  console.log("search: ", search);
 
   const similarities = [];
   for (let i = 0; i < documentsPackages.length; i++) {
     const pack = documentsPackages[i];
 
-    // console.log("Computing similarity | part: ", i + 1);
+    console.log("Computing similarity | part: ", i + 1);
     // computar similaridade para cada documento de cada pacote
     for (let j = 0; j < pack.length; j++) {
       const docPosition = pack[j][0];
       const document = pack[j][1];
 
-      const measure = computeSimilarity(document, search);
+      const measure = computeSimilarity(document, searchVector);
       // retorna o índice do anime no dataset original
       similarities.push([docPosition, measure]);
     }
@@ -51,15 +47,14 @@ export function syncRecommender(documentsPackages, search) {
   return similarities;
 }
 
-export async function syncRecommenderV2(documentsPackages, search) {
+export function syncRecommenderV2(documentsPackages, searchVector) {
   console.log("Recommender");
-  console.log("search: ", search);
 
-  const promisedSimilarities = documentsPackages.map((pack, i) => {
-    // console.log("Computing similarity | part: ", i + 1);
+  const similarities = documentsPackages.map((pack, i) => {
+    console.log("Computing similarity | part: ", i + 1);
     // computar similaridade para cada documento de cada pacote
     const computedSimilarities = pack.map(([pos, document]) => {
-      const measure = computeSimilarity(document, search);
+      const measure = computeSimilarity(document, searchVector);
       // retorna o índice do anime no dataset original
       return [pos, measure];
     });
@@ -67,20 +62,19 @@ export async function syncRecommenderV2(documentsPackages, search) {
     return computedSimilarities;
   });
 
-  return promisedSimilarities.flat();
+  return similarities.flat();
 }
 // paralelizar o processamento da recomendação
-export async function asyncRecommender(documentsPackages, search) {
+export async function asyncRecommender(documentsPackages, searchVector) {
   console.log("Recommender");
-  console.log("search: ", search);
 
   const promisedSimilarities = documentsPackages.map((pack, i) => {
-    // console.log("Computing similarity | part: ", i + 1);
+    console.log("Computing similarity | part: ", i + 1);
     // computar similaridade para cada documento de cada pacote
     const computedSimilarities = pack.map(
       ([pos, document]) =>
         new Promise((resolve) => {
-          const measure = computeSimilarity(document, search);
+          const measure = computeSimilarity(document, searchVector);
           // retorna o índice do anime no dataset original
           resolve([pos, measure]);
         })
@@ -92,12 +86,8 @@ export async function asyncRecommender(documentsPackages, search) {
 }
 
 // utiliza os vetores de documentos salvos para recomendar
-function prebuildSyncRecommender(search) {
+function prebuildSyncRecommender(searchVector) {
   console.log("Recommender");
-  console.log("search: ", search);
-
-  search = clearDocument(search);
-  const searchVector = generateVSMWithTfIdf(search);
 
   const dir = Path.resolve("./public");
 
@@ -115,30 +105,38 @@ function prebuildSyncRecommender(search) {
     docs.map(([realIndex, docVector]) => {
       const measure = similarity(docVector, searchVector);
       computedSimilarities.push([realIndex, measure]);
-    })
+    });
   });
 
   return computedSimilarities;
 }
 // cria o ranking de recomendações
 export async function createRanking() {
-  
   const docsDir = Path.resolve("./public/animes.json");
   const docs = JSON.parse(Fs.readFileSync(docsDir, "utf8"));
-  
+
   const packLength = 200;
   // separar os documentos em pacotes
   const documentsPackages = createDocPacksWithRealIndex(docs, packLength);
-  
-  const search = "two brothers enter army to become alchemists";
+
+  let search = "two brothers enter army to become alchemists";
+  console.log("search: ", search);
+
+  search = clearDocument(search);
+  const searchVector = generateVSMWithTfIdf(search);
+
   console.time("recommender");
 
-  // const computedSimilarities = await asyncRecommender(documentsPackages, search);
-  // const computedSimilarities = syncRecommender(documentsPackages, search);
-  // const computedSimilarities = syncRecommenderV2(documentsPackages, search);
-  // const computedSimilarities = recommender(docs, search);
-  const computedSimilarities = prebuildSyncRecommender(search);
+  // const computedSimilarities = await asyncRecommender(documentsPackages, searchVector);
+  // const computedSimilarities = syncRecommender(documentsPackages, searchVector);
+  // const computedSimilarities = syncRecommenderV2(
+  //   documentsPackages,
+  //   searchVector
+  // );
+  // const computedSimilarities = recommender(docs, searchVector);
+  const computedSimilarities = prebuildSyncRecommender(searchVector);
 
+  console.log(computedSimilarities);
   computedSimilarities.sort((a, b) => b[1] - a[1]);
 
   const topMeasures = computedSimilarities.slice(0, 10);
