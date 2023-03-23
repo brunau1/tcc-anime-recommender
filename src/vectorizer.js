@@ -18,7 +18,7 @@ export function generateVSMWithTfIdf(document = "") {
   for (const term of documentTerms) {
     const termIndex = dictionary.terms.indexOf(term);
     const termCount = documentTerms.filter((t) => t === term).length;
-    const tf = termCount; // / documentTerms.length; // forma comum de calcular o tf
+    const tf = termCount / documentTerms.length; // forma comum de calcular o tf
 
     if (termIndex >= 0) {
       vsm[termIndex] += tf * dictionary.idfs[termIndex];

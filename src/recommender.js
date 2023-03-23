@@ -11,14 +11,14 @@ export function computeSimilarity(document = "", search = "") {
 
   return similarity(documentVector, searchVector);
 }
-
+// recomendar a partir dos documentos vetorializados salvos
 export function recommender() {
   console.log("Recommender");
 console.time("recommender");
 
   const computedSimilarities = [];
   const search =
-    "two brothers and their friends are transported to a magical world where they must defeat an evil wizard to return home";
+    "two brothers enter army to become alchemists";
 
   console.log("search: ", search);
 
