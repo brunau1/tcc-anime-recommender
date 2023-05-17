@@ -45,14 +45,14 @@ function getDocuments(csvContent) {
 
     // adiciona apenas se o title
     // e a descrição não estiverem vazios
-    if (!uniqueTitles.has(title) && !!description) {
+    if (!!title && !uniqueDescriptions.has(description)) {
       uniqueTitles.add(title);
       uniqueDescriptions.add(description);
       // (description && !documents.content.has(description)) {
       documents.names.push(title);
       // inclui o nome do anime no conteúdo do texto
       // para match de buscas por nome da obra
-      documents.content.push(title + " " + description);
+      documents.content.push(description);
     }
   }
 
@@ -60,7 +60,9 @@ function getDocuments(csvContent) {
     "unique titles: ",
     uniqueTitles.size,
     "unique descriptions: ",
-    uniqueDescriptions.size
+    uniqueDescriptions.size,
+    "documents: ",
+    documents.content.length
   );
 
   return documents;

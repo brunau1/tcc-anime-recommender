@@ -1,0 +1,147 @@
+[
+  {
+    "title": "Haikyuu!!",
+    "queries": [
+      "A high school volleyball team with a history of losing strives to become the best in Japan.",
+      "Join a high school volleyball team as they strive to become the best in the country, overcoming their personal weaknesses and working together as a team.",
+      "Experience the intensity and excitement of high school sports as the players push themselves to their physical and mental limits in order to compete at the highest level",
+      "Watch as a group of determined athletes learn to trust each other and work together to achieve their goals, all while forming close bonds and developing their skills on and off the court"
+    ],
+    "documents": [721, 1604, 1600, 1601, 851]
+  },
+  {
+    "title": "Made in Abyss",
+    "queries": [
+      "A young girl and her robot friend venture into a deadly chasm to find her missing mother in a world filled with mysterious artifacts.",
+      "Journey to the center of a massive and mysterious abyss, where danger and discovery await those brave enough to explore its depths",
+      "As they journey deeper into the abyss, our heroes must navigate treacherous terrain and face increasingly dangerous creatures, all while uncovering the dark secrets that the abyss has been hiding for centuries"
+    ],
+    "documents": [2, 414, 559]
+  },
+  {
+    "title": "InuYasha",
+    "queries": [
+      "A modern-day girl travels back in time to feudal Japan and teams up with a half-demon named Inuyasha to collect the shards of a powerful jewel.",
+      "Join Kagome Higurashi, a modern-day high school girl who is transported back in time to feudal Japan, as she teams up with the half-demon Inuyasha to recover the shards of the powerful Shikon Jewel before it falls into the hands of evil demons",
+      "Experience the intense battle between Inuyasha and his arch-nemesis, the powerful demon Naraku, as they fight to protect the ones they love and bring peace to the land of the living and the dead"
+    ],
+    "documents": [13943, 118, 536, 817]
+  },
+  {
+    "title": "One Piece",
+    "queries": [
+      "Experience the grand adventure of Monkey D. Luffy and his crew as they journey through the Grand Line, facing dangerous enemies and discovering hidden treasures along the way",
+      "Explore the emotional journey of the Straw Hat crew as they confront their own pasts and strive to overcome their greatest fears and weaknesses, all while pursuing their dreams and ambitions",
+      "Witness the epic battle at Marineford, as Luffy and his allies fight against powerful adversaries to rescue their friend from the clutches of the Marines"
+    ],
+    "documents": [693, 13970, 519, 14996, 7621]
+  },
+  {
+    "title": "Naruto",
+    "queries": [
+      "Experience the journey of a young orphan who dreams of becoming the strongest ninja in his village, while also uncovering the truth about his past and battling dangerous foes",
+      "Step into a world where ninjas live among us and where the power of chakra can make the impossible possible, as one young hero rises above the rest to protect his village and loved ones",
+      "In a land where conflicts are settled by battles between powerful ninja clans, a young and determined hero sets out on a quest to prove his worth and make a name for himself in the world of ninja"
+    ],
+    "documents": [142, 473, 13469, 13468, 5595, 14869]
+  },
+  {
+    "title": "91 Days",
+    "queries": [
+      "A young man seeks revenge against the mafia boss who killed his family during the Prohibition era of the United States."
+    ],
+    "documents": [59, 5755]
+  },
+  {
+    "title": "Kimetsu no Yaiba",
+    "queries": [
+      "A young boy becomes a demon slayer to avenge his family's death by demons.",
+      "Enter a world of demons and demon slayers, where a young boy sets out on a quest to save his sister and avenge his family after a tragic attack",
+      "Experience the epic battles between skilled demon slayers and powerful demons, as they clash in a fight for survival and the fate of humanity"
+    ],
+    "documents": [7, 1579]
+  },
+  {
+    "title": "Fullmetal Alchemist",
+    "queries": [
+      "Edward discovers the true nature of the Philosopher's Stone and the sinister plans of those seeking to obtain it, ultimately leading to a final confrontation with the Homunculus and a dramatic battle for the fate of the world",
+      "Edward and Alphonse Elric attempt to use alchemy to bring their deceased mother back to life, resulting in the loss of Edward's arm and leg and Alphonse's entire body, with his soul being bound to a suit of armor.",
+      "The Elric brothers set out on a journey to find the Philosopher's Stone, which they believe can restore their bodies to their original state, encountering a variety of friends and foes along the way."
+    ],
+    "documents": [499, 3, 14660, 340, 13378, 5531]
+  },
+  {
+    "title": "Boku no Hero Academia",
+    "queries": [
+      "In a world where almost everyone has a superpower, a young boy without any powers strives to become a hero and enrolls in a prestigious hero academy",
+      "The aspiring heroes in training face their first major test as they are thrown into a simulated disaster scenario to see how they handle pressure and teamwork",
+      "A group of villains infiltrate the academy's training camp, leading to a fierce battle where the students must put their training to the test to protect themselves and their friends"
+    ],
+    "documents": [588, 514, 702, 710, 315]
+  },
+  {
+    "title": "One Punch man",
+    "queries": [
+      "A bored and overpowered superhero seeks a worthy opponent to fight against, but his strength often makes fights end in a single punch.",
+      "Witness the epic battle against the monstrous Deep Sea King, as our hero fights to save the city and protect its inhabitants from certain doom",
+      "Explore the cataclysmic confrontation against the powerful alien invaders, as our hero teams up with other powerful warriors to save the world from an impending apocalypse"
+    ],
+    "documents": [16, 863, 8583]
+  },
+  {
+    "title": "Devilman",
+    "queries": [
+      "Experience the dark and gruesome tale of a young man who becomes possessed by a demon, gaining immense power and fighting against an army of demonic invaders to save humanity",
+      "Witness the tragic and violent struggle between Devilman and his demonic brethren, as he grapples with the line between his own humanity and the destructive forces inside him",
+      "Explore the complex and philosophical themes of identity, morality, and power, as Devilman and his allies navigate a world filled with chaos, violence, and the looming threat of apocalypse"
+    ],
+    "documents": [12987, 162, 7811, 15077]
+  },
+  {
+    "title": "Shingeki no Kyojin",
+    "queries": [
+      "The discovery of a colossal titan breaching Wall Maria leads to the invasion of titans and the death of many people, including Eren's mother",
+      "Eren gains the power to transform into a titan and joins the Survey Corps to fight against the titans and uncover the truth behind their existence",
+      "The revelation that humans can turn into titans and the government's involvement in controlling them leads to an all-out war between the Survey Corps and the military"
+    ],
+    "documents": [667, 638, 675, 756, 1545]
+  },
+  {
+    "title": "Bleach",
+    "queries": [
+      "A high school student gains the power to see and fight ghosts, becoming embroiled in a battle against evil spirits and other supernatural beings.",
+      "Experience the epic showdown between Ichigo and the traitorous Soul Reaper, Sosuke Aizen, as they battle for the fate of the Soul Society and the entire world",
+      "Witness the emotional and dramatic struggle of Ichigo and his friends as they confront their own inner demons, grapple with the consequences of their actions, and fight to protect their own identities and beliefs."
+    ],
+    "documents": [9469, 15084, 4998]
+  },
+  {
+    "title": "Dragon Ball",
+    "queries": [
+      "Experience the intense battle on Namek, as our heroes face off against powerful villains to retrieve the Dragon Balls and revive their fallen friends",
+      "Witness the epic showdown against the monstrous Cell, as our heroes put their lives on the line to save the world from certain destruction",
+      "Explore the epic saga of the Saiyan race, as our hero confronts his own heritage and battles against his evil brother in a fight for the fate of the Earth"
+    ],
+    "documents": [370, 524, 9839, 819, 5569, 3226]
+  },
+  {
+    "title": "Knights of the Zodiac",
+    "queries": [
+      "A young man becomes one of the legendary Knights of the Zodiac, tasked with protecting the goddess Athena and fighting against powerful enemies with extraordinary fighting skills",
+      "The Bronze Knights embark on a perilous journey to find the legendary Cloth armor and save the world from destruction",
+      "Seiya and his friends must overcome various challenges and battles as they ascend the ranks of the Saints to protect Athena and the universe from evil forces",
+      "The Twelve Gold Saints must unite to face the nefarious plots of the gods and thwart their plans to overthrow Athena and rule over humanity"
+    ],
+    "documents": [7208, 111, 4333, 11987, 348]
+  },
+  {
+    "title": "Sword Art Online",
+    "queries": [
+      "Enter a world where virtual reality technology has advanced to the point where players can fully immerse themselves in a massive online game world, complete with life-like graphics and sensations",
+      "Experience the excitement and danger of a fully-realized fantasy world, as players must fight their way through increasingly challenging levels in order to progress and survive",
+      "Explore the psychological and emotional impact of being trapped inside a virtual world, as players must confront the reality of their situation and find a way to escape before it's too late",
+      "Players become trapped in a virtual reality game, where their real bodies are held captive, and must clear the game's 100 floors to escape."
+    ],
+    "documents": [5008, 7465, 4880, 14863, 91, 12896]
+  }
+]

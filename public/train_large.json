@@ -1,0 +1,322 @@
+[
+  {
+    "title": "Made in Abyss",
+    "queries": [
+      "A young girl and her robot friend venture into a deadly chasm to find her missing mother in a world filled with mysterious artifacts.",
+      "Journey to the center of a massive and mysterious abyss, where danger and discovery await those brave enough to explore its depths",
+      "As they journey deeper into the abyss, our heroes must navigate treacherous terrain and face increasingly dangerous creatures, all while uncovering the dark secrets that the abyss has been hiding for centuries"
+    ],
+    "documents": [2, 414, 559]
+  },
+  {
+    "title": "haikyuu",
+    "queries": [
+      "the volleyball team is the main focus of the anime",
+      "the anime is about a volleyball team and their journey to become the best in Japan",
+      "the anime show the daily life of the volleyball team training and playing matches",
+      "the anime shows the daily life of a volleyball team in high school and their journey to become the best in Japan",
+      "A high school volleyball team with a history of losing strives to become the best in Japan.",
+      "Join a high school volleyball team as they strive to become the best in the country, overcoming their personal weaknesses and working together as a team.",
+      "Experience the intensity and excitement of high school sports as the players push themselves to their physical and mental limits in order to compete at the highest level",
+      "Watch as a group of determined athletes learn to trust each other and work together to achieve their goals, all while forming close bonds and developing their skills on and off the court",
+      "Shoyo Hinata joins his high school volleyball team and aims to surpass his rival, Tobio Kageyama, in the sport they both love",
+      "The Karasuno volleyball team faces new challenges and opponents as they continue their journey to Nationals",
+      "The members of the Karasuno volleyball team attend a training camp where they compete against other top players in Japan"
+    ],
+    "documents": [0, 10, 30, 84, 132, 161, 721, 851, 1600, 1601]
+  },
+  {
+    "title": "devilman",
+    "queries": [
+      "a boy was possessed by a demon and now he has to fight demons",
+      "the protagonist is a demon and he has to fight against other demons",
+      "the protagonist is a demon and he has to fight against other demons to protect humanity",
+      "Akira Fudo becomes a Devilman, gaining immense power to protect humanity from demonic threats, but at a great personal cost",
+      "Jun Fudo, a model with a secret, transforms into a Devil Lady and fights against a conspiracy to control the world",
+      "Akira Fudo learns about his true identity and the origins of the demon race, while facing new threats to humanity",
+      "Experience the dark and gruesome tale of a young man who becomes possessed by a demon, gaining immense power and fighting against an army of demonic invaders to save humanity",
+      "Witness the tragic and violent struggle between Devilman and his demonic brethren, as he grapples with the line between his own humanity and the destructive forces inside him",
+      "Explore the complex and philosophical themes of identity, morality, and power, as Devilman and his allies navigate a world filled with chaos, violence, and the looming threat of apocalypse"
+    ],
+    "documents": [
+      162, 2900, 4412, 4413, 7811, 10356, 12987, 13083, 14350, 15077
+    ]
+  },
+  {
+    "title": "Naruto",
+    "queries": [
+      "A ninja kid who wants to become a hokage, the leader of his village",
+      "now as a hokage he has to protect his village from the bad guys",
+      "the protagonist reachs his goal and now he is the hokage of his village and is married with his childhood friend",
+      "A ninja kid who wants to be the best ninja in his village, but has a demon inside him that makes him a target for the bad guys",
+      "Experience the journey of a young orphan who dreams of becoming the strongest ninja in his village, while also uncovering the truth about his past and battling dangerous foes",
+      "Step into a world where ninjas live among us and where the power of chakra can make the impossible possible, as one young hero rises above the rest to protect his village and loved ones",
+      "In a land where conflicts are settled by battles between powerful ninja clans, a young and determined hero sets out on a quest to prove his worth and make a name for himself in the world of ninja",
+      "A young ninja named Naruto Uzumaki dreams of becoming Hokage, the strongest ninja in his village, but faces many challenges along the way",
+      "Naruto returns to his village after two and a half years of intense training, ready to face the Akatsuki organization and save his friend Sasuke",
+      "Naruto must save the world from destruction by the moon, while also trying to save his longtime friend Hinata from a dark fate"
+    ],
+    "documents": [142, 473, 802, 906, 3644, 3842, 4499, 4786, 5144, 5197]
+  },
+  {
+    "title": "Death note",
+    "queries": [
+      "the protagonist gains the power to kill anyone whose name he writes in a notebook",
+      "after using the notebook, the protagonist becomes a serial killer and now he has to fight against a detective",
+      "the shinigami power is called death note and it can kill anyone whose name is written in it",
+      "A high school student named Light Yagami finds a supernatural notebook that allows him to kill anyone whose name he writes in it, and begins a quest to rid the world of criminals",
+      "Light and his rival L continue their cat-and-mouse game, with new players and twists that complicate the battle of wits"
+    ],
+    "documents": [726, 977]
+  },
+  {
+    "title": "Sword Art Online",
+    "queries": [
+      "kirito become trapped in a virtual reality game and now he has to fight to escape",
+      "the protagonist is trapped in a virtual reality game and he has to fight to escape",
+      "the protagonist friends are a swordsman, a healer, a blacksmith and a merchant",
+      "the protagonist is a swordsman and he has to fight to escape from a virtual reality game",
+      "Enter a world where virtual reality technology has advanced to the point where players can fully immerse themselves in a massive online game world, complete with life-like graphics and sensations",
+      "Experience the excitement and danger of a fully-realized fantasy world, as players must fight their way through increasingly challenging levels in order to progress and survive",
+      "Explore the psychological and emotional impact of being trapped inside a virtual world, as players must confront the reality of their situation and find a way to escape before it's too late",
+      "Players become trapped in a virtual reality game, where their real bodies are held captive, and must clear the game's 100 floors to escape.",
+      "In the year 2022, a new virtual reality game called Sword Art Online traps its players inside, and protagonist Kirito must fight his way through the game's levels to escape",
+      "Kirito returns to the virtual world to investigate a series of murders, and uncovers a dark plot involving a new VR game called Gun Gale Online",
+      "The war for the Underworld reaches its climax, as Kirito and his allies fight to protect their new world from the dark forces threatening to destroy it"
+    ],
+    "documents": [91, 778, 1083, 3657, 4880, 5008, 7140, 7465, 8603, 9072]
+  },
+  {
+    "title": "Bleach",
+    "queries": [
+      "the protagonist got the shinigami sword and now he has to kill hollows",
+      "the protagonist friends are a shinigami, a quincy, a fullbringer and a human",
+      "the protagonist meets a shinigami and he has to fight against hollows",
+      "after meeting a shinigami, the protagonist discovers the soul society",
+      "the soul society is a place where shinigamis live and they have to protect the human world from hollows",
+      "A high school student gains the power to see and fight ghosts named hollows, becoming embroiled in a battle against evil spirits and other supernatural beings.",
+      "Experience the epic showdown between Ichigo and the traitorous Soul Reaper, Sosuke Aizen, as they battle for the fate of the Soul Society and the entire world",
+      "Witness the emotional and dramatic struggle of Ichigo and his friends as they confront their own inner demons, grapple with the consequences of their actions, and fight to protect their own identities and beliefs.",
+      "High school student Ichigo Kurosaki gains the power to see spirits and becomes a substitute Soul Reaper, tasked with protecting the living world from malevolent spirits and guiding departed souls to the afterlife",
+      "A mysterious group called the Blanks begin appearing in the human world, leading Ichigo and his friends to confront a powerful enemy and uncover secrets about the afterlife",
+      "After the Soul Society is attacked by a mysterious figure, memories of Ichigo and his friends begin to disappear, leaving them stranded and without their powers"
+    ],
+    "documents": [57, 3103, 4998, 5478, 6560, 9469, 10161, 15084]
+  },
+  {
+    "title": "Fairy Tail",
+    "queries": [
+      "a fire dragon mage and his friends fight against a dark guild",
+      "the dark dragon is a powerful mage and he has to fight against a fire dragon mage",
+      "A young mage named Lucy joins the infamous wizard guild Fairy Tail and embarks on adventures with her powerful and rowdy new friends",
+      "After a seven-year absence, the members of Fairy Tail reunite to confront new enemies and uncover secrets from their past",
+      "When a mysterious girl with magical powers seeks their help, the Fairy Tail guild embarks on a perilous mission to save the world",
+      "Lucy Heartfilia joins the Fairy Tail guild and embarks on a series of adventures with her new friends, including Natsu Dragneel, a fire wizard with a mysterious past",
+      "The Fairy Tail guild sets out to recover a powerful artifact, the Dragon Cry, before it falls into the wrong hands and unleashes destruction on the world",
+      "The epic finale to the Fairy Tail series sees the guild facing their greatest challenge yet as they battle to save their world from destruction",
+      "When a mysterious girl with magical powers seeks their help, the Fairy Tail guild embarks on a perilous mission to save the world",
+      "it has a dragon fire wizard and his friends who fights against a dark guild, a dark wizard and a dark dragon"
+     ],
+    "documents": [147, 193, 835, 2928, 5061, 5280, 9853, 13200, 14725]
+  },
+  {
+    "title": "Nanatsu no Taizai",
+    "queries": [
+      "there is a legendary group of knights called the seven deadly sins",
+      "the seven deadly sins are a group of knights who were framed for a crime they didn't commit",
+      "meliodas always use a broken sword and he is the leader of the seven deadly sins",
+      "the protagonist lost his memories and now he has to find the seven deadly sins",
+      "the seven deadly sins are a group of knights who were framed for a crime they didn't commit, and now they must clear their names and save the kingdom",
+      "The legendary group of knights known as The Seven Deadly Sins were framed for a crime they didn't commit, leading to their disbandment. Ten years later, the kingdom is in peril, and the princess sets out on a journey to find the Sins and ask for their help",
+      "The Ten Commandments, a group of powerful demons, are freed from their seal and plan to take over the kingdom. The Seven Deadly Sins must team up with the Holy Knights to stop them",
+      "The Sins discover that demons are attacking the kingdom and must find a way to stop them. Meanwhile, Meliodas must confront his past and the consequences of his actions",
+      "Before the events of the main series, the Sins must team up with the Holy Knights to stop a group of powerful demons from awakening a powerful beast",
+      "The kingdom is at war, and the Sins must fight to protect their friends and stop the demon king. Meliodas faces his ultimate challenge as he tries to save Elizabeth and defeat his father"
+    ],
+    "documents": [395, 448, 1021, 3141, 4142, 4212, 5370, 7459, 7953, 10049]
+  },
+  {
+    "title": "One Piece",
+    "queries": [
+      "the protagonist uses a straw hat and can stretch his body",
+      "the protagonist is a pirate and uses a straw hat",
+      "the protagonist power is to stretch his body and he is a pirate",
+      "the protagonist gains the power for stretch his body afeter eat the devil fruit",
+      "the protagonist become a pirate and he is searching for a treasure called one piece",
+      "the protagonist friends are a swordsman, a navigator, a cook, a doctor, a musician and a shipwright",
+      "Experience the grand adventure of Monkey D. Luffy and his crew as they journey through the Grand Line, facing dangerous enemies and discovering hidden treasures along the way",
+      "Explore the emotional journey of the Straw Hat crew as they confront their own pasts and strive to overcome their greatest fears and weaknesses, all while pursuing their dreams and ambitions",
+      "Witness the epic battle at Marineford, as Luffy and his allies fight against powerful adversaries to rescue their friend from the clutches of the Marines",
+      "follows the journey of Monkey D. Luffy and his crew as they search for the legendary treasure One Piece while facing various obstacles, including the notorious pirate hunter, Captain Smoker",
+      "a massive battle between Luffy's allies and the powerful World Government as they try to save Luffy's brother, Portgas D. Ace, from being executed",
+      "Luffy and his crew infiltrate the world government's judicial island to rescue their friend Nico Robin, who is being held captive by the World Government"
+    ],
+    "documents": [237, 238, 312, 321, 412, 471, 503, 519, 693, 932]
+  },
+  {
+    "title": "Dragon Ball",
+    "queries": [
+      "the protagonist use the dragon wish to revive his friends",
+      "the dragon appears and the protagonist can revive his friends",
+      "the dragon will grant a wish to the one who collects all the dragon balls and find the dragon",
+      "Experience the intense battle on Namek, as our heroes face off against powerful villains to retrieve the Dragon Balls and revive their fallen friends",
+      "Witness the epic showdown against the monstrous Cell, as our heroes put their lives on the line to save the world from certain destruction",
+      "Explore the epic saga of the Saiyan race, as our hero confronts his own heritage and battles against his evil brother in a fight for the fate of the Earth",
+      "follows the adventures of a young boy named Goku, who possesses incredible strength and learns martial arts to protect Earth from various threats",
+      "follows an adult Goku as he battles powerful enemies to save the world from destruction",
+      "after the defeat of the powerful villain Majin Buu, introducing new characters and exploring new universes through epic battles",
+      "goku is about to become a super saiyan and he is going to fight against the evil lord frieza",
+      "after years of training and fighting, goku reachs a new level of power"
+    ],
+    "documents": [370, 491, 524, 819, 837, 875, 1273, 2827, 3226, 4872]
+  },
+  {
+    "title": "Fullmetal Alchemist",
+    "queries": [
+      "two brothers lost their bodies and now they have to find the philosopher stone",
+      "the protagonist is a state alchemist and he is searching for the philosopher stone",
+      "edward and alphonse dicovers the nature of immortality and power granted by the philosopher stone",
+      "the filosopher stone is a powerful artifact that can grant immortality and power ignoring the laws of alchemy",
+      "Edward discovers the true nature of the Philosopher's Stone and the sinister plans of those seeking to obtain it, ultimately leading to a final confrontation with the Homunculus and a dramatic battle for the fate of the world",
+      "Edward and Alphonse Elric attempt to use alchemy to bring their deceased mother back to life, resulting in the loss of Edward's arm and leg and Alphonse's entire body, with his soul being bound to a suit of armor.",
+      "The Elric brothers set out on a journey to find the Philosopher's Stone, which they believe can restore their bodies to their original state, encountering a variety of friends and foes along the way.",
+      "Two brothers embark on a journey to uncover the dark secrets of alchemy and save their world from corruption.",
+      "After a failed attempt to revive their mother using alchemy, two brothers search for the Philosopher's Stone to restore their bodies.",
+      "The Elric brothers encounter a rebellion and a mysterious island while investigating a new threat to their world."
+    ],
+    "documents": [3, 340, 499, 2894, 5531, 5886, 12908, 13378, 14660]
+  },
+  {
+    "title": "One punch man",
+    "queries": [
+      "a man who can defeat any enemy with just one punch",
+      "the protagonist become skinny after training too much",
+      "the protagonist defeat the sea king with just one punch",
+      "the protagonist destroys a meteor with just one punch",
+      "the protagonist become the stronger man in the world but he is bored because he can defeat any enemy with just one punch",
+      "A bored and overpowered superhero seeks a worthy opponent to fight against, but his strength often makes fights end in a single punch.",
+      "Witness the epic battle against the monstrous Deep Sea King, as our hero fights to save the city and protect its inhabitants from certain doom",
+      "Explore the cataclysmic confrontation against the powerful alien invaders, as our hero teams up with other powerful warriors to save the world from an impending apocalypse",
+      "A story about a hero who can defeat any enemy with just one punch, but is struggling to find a worthy opponent to challenge him",
+      "A cyborg hero named Genos seeks out the titular character, Saitama, as a mentor to improve his own skills in fighting monsters",
+      "Saitama trains relentlessly to become the ultimate master of martial arts, but his overwhelming strength causes him to become bored with the lack of challenges",
+      "Saitama joins a group of heroes called the Hero Association, but struggles to gain recognition for his feats due to his unassuming appearance and lack of an official hero name"
+    ],
+    "documents": [16, 863, 881, 8583, 8939, 10096]
+  },
+  {
+    "title": "boku no hero academia",
+    "queries": [
+      "the protagonist was very weak and now he has to train to become a hero",
+      "the protagonist does not have any superpower and he wants to become a hero",
+      "the protagonist receives a superpower and now he has to train to become a hero",
+      "the protagonist power is called one for all",
+      "there is a lot of strong heros such as the flame hero and all might",
+      "A world where most people have superpowers, a boy with no abilities dreams of becoming a hero and enrolls in a school for heroes",
+      "The students of U.A. High School go on a field trip to an island, where they face a villain and team up with a hero to save the day",
+      "The students of Class 1-A are assigned to a remote island to work as temporary heroes, but their peaceful mission turns into a battle for survival",
+      "The students of U.A. High School participate in a rescue training where they must use their powers and teamwork to save people in danger",
+      "The students of Class 1-A participate in a survival training where they must work together to overcome obstacles and survive in the wilderness"
+    ],
+    "documents": [315, 514, 588, 702, 710, 2930, 8502, 10127]
+  },
+  {
+    "title": "Shingeki no Kyojin",
+    "queries": [
+      "after the falling of wall maria, the protagonist joins the survey corps to fight against the titans",
+      "eren loses his family and he wants to kill all the titans",
+      "the protagonist discover his power to transform into a titan",
+      "introduces the world of Attack on Titan, where humanity lives in fear behind towering walls to protect themselves from the Titans, giant humanoid creatures that eat humans without reason",
+      "After a devastating attack by the Titans, the remaining soldiers and citizens must fight to retake Trost District and secure their survival",
+      "A new threat emerges as the Scouts discover a Titan that can move with intelligence and strategy, leading to a frantic pursuit to uncover the identity of the Female Titan",
+      "The secrets of the Titans are slowly revealed as the Scouts confront new foes, including the armored and colossal Titans, and face betrayal and political turmoil within their own ranks",
+      "The Scouts launch a dangerous mission to retake Wall Maria and uncover the secrets of the basement, leading to a bloody battle against the Titans and their mysterious leader",
+      "As tensions rise between the Marleyans and Eldians, a surprise attack by the Scouts on the Marleyan mainland sparks a brutal battle that could determine the fate of the world",
+      "sees the Scouts face their toughest challenge yet as they confront the full force of the Marleyan military and uncover the shocking truth behind the Titans' existence"
+    ],
+    "documents": [62, 613, 638, 667, 675, 756, 885, 886, 1043, 1545]
+  },
+  {
+    "title": "inuyasha",
+    "queries": [
+      "A modern-day girl travels back in time to feudal Japan and teams up with a half-demon named Inuyasha to collect the shards of a powerful jewel.",
+      "Join Kagome Higurashi, a modern-day high school girl who is transported back in time to feudal Japan, as she teams up with the half-demon Inuyasha to recover the shards of the powerful Shikon Jewel before it falls into the hands of evil demons",
+      "Experience the intense battle between Inuyasha and his arch-nemesis, the powerful demon Naraku, as they fight to protect the ones they love and bring peace to the land of the living and the dead"
+    ],
+    "documents": [28, 118, 536, 817, 1074, 4799, 5558, 13943]
+  },
+  {
+    "title": "Saint Seiya",
+    "queries": [
+      "the soldiers fight to protect the goddess athena",
+      "it was a group of knights who use saint armors blessed by the goddess athena",
+      "A young man becomes one of the legendary Knights of the Zodiac, tasked with protecting the goddess Athena and fighting against powerful enemies with extraordinary fighting skills",
+      "The Bronze Knights embark on a perilous journey to find the legendary Cloth armor and save the world from destruction",
+      "Seiya and his friends must overcome various challenges and battles as they ascend the ranks of the Saints to protect Athena and the universe from evil forces",
+      "The Twelve Gold Saints must unite to face the nefarious plots of the gods and thwart their plans to overthrow Athena and rule over humanity",
+      "The story follows a group of young warriors known as Saints, who are sworn to protect the reincarnation of the Greek goddess Athena from evil forces",
+      "The story focuses on a group of female Saints known as the Saintias, who are tasked with protecting Athena and the universe from evil",
+      "following the young Saint Seiya and his friends as they fight against the 12 Gold Saints to save Athena"
+    ],
+    "documents": [21, 111, 348, 394, 410, 781, 2940, 3165, 4333, 4920]
+  },
+  {
+    "title": "hunter x hunter",
+    "queries": [
+      "follows a young boy named Gon as he embarks on a journey to become a hunter, a profession that is highly respected in society. Along the way, he meets other aspiring hunters, and they must pass a series of grueling tests to prove themselves worthy of the title",
+      "after Gon and his friends have become hunters. They venture to Yorknew City for a massive auction of rare and valuable items, but they soon become entangled in a dangerous underworld conflict involving powerful criminal organizations",
+      "Gon and his friends gain access to a rare and highly sought-after video game called Greed Island. The game is rumored to hold clues to finding Gon's father",
+      "powerful and dangerous species of creatures called Chimera Ants. Gon and his friends must confront the Ants and their leader, who poses a serious threat to humanity",
+      "In an effort to restore order and elect a new chairman of the Hunter Association, a massive election is held, and Gon and his friends find themselves caught up in the political intrigue",
+      "a group of elite hunters embark on a dangerous expedition to explore the uncharted territory known as the Dark Continent"
+    ],
+    "documents": [511, 565, 585, 659, 758, 14192, 14483, 14557]
+  },
+  {
+    "title": "Evangelion",
+    "queries": [
+      "follows teenager Shinji as he's recruited to pilot a giant robot to defend against the monstrous Angels, while exploring the deeper psychological and philosophical themes of the series",
+      "shows the aftermath of Asuka's fight with the mass-produced Evas and her struggle to regain control of her unit",
+      "this installment sees new Eva pilots and a more confident Shinji as they face off against the powerful Angels",
+      "explores the consequences of Shinji's choices and the consequences of NERV's actions as they prepare for the final battle against the Angels",
+      "The final installment of the Rebuild of Evangelion series sees Shinji and his friends face off against the powerful Angels in a final battle for the fate of humanity"
+    ],
+    "documents": [383, 573, 622, 687, 3123, 4057, 5713]
+  },
+  {
+    "title": "sailor moon",
+    "queries": [
+      "where Sailor Moon and her friends must fight against the evil Queen Beryl and her minions to protect the Legendary Silver Crystal and save the world",
+      "The second arc of the series, where a new enemy appears from the future, the Black Moon Clan, and Sailor Moon and the Sailor Scouts must stop them from destroying the present",
+      "a group of villains called the Death Busters plan to awaken an ancient evil to destroy the world, and Sailor Moon and her friends must stop them",
+      "where Sailor Moon and her friends meet new Sailor Scouts from outside the Solar System and must stop a group of aliens from taking over Earth",
+      "where Sailor Moon and her friends must fight against the Dead Moon Circus, a group of villains who plan to take over the world",
+      "the arrival of Pegasus and the search for the Golden Crystal, while the Sailor Scouts face a new enemy called the Dead Moon Circus"
+    ],
+    "documents": [121, 200, 920, 969, 1033, 1058, 1059]
+  },
+  {
+    "title": "cowboy bebop",
+    "queries": [
+      "Spike Spiegel and Jet Black, bounty hunters in space, track down a dangerous criminal on the planet Mars",
+      "Spike and Jet pursue a genetically modified dog that was stolen from a research facility, and try to sell it for a large sum of money",
+      "Spike, Jet, and Faye Valentine try to capture a group of space thieves who have taken control of a passenger ship",
+      "The Bebop crew investigates a suspicious casino where Faye has been gambling, and Spike confronts a woman from his past",
+      "Spike is forced to confront his past and face off against his former partner, Vicious, when he learns that he has returned to the Red Dragon Syndicate",
+      "Spike and his allies must confront the Red Dragon Syndicate and settle old scores, leading to a fateful final showdown"
+    ],
+    "documents": [630, 750, 8313, 13899]
+  },
+  {
+    "title": "Berserk",
+    "queries": [
+      "Guts, the main character, is on a quest for revenge against his former friend and leader, Griffith, after a betrayal that left their mercenary group destroyed",
+      "The story explores Guts and Griffith's past as they rose through the ranks of the mercenary group, the Band of the Hawk, and the events that lead to their betrayal",
+      "After being branded with a cursed mark, Guts finds himself fighting against demonic forces while encountering new allies and enemies along the way",
+      "Guts and his group are caught in the middle of a war between human factions and demonic forces, with the fate of the world at stake",
+      "Griffith, now reborn as a powerful demon lord, creates a new empire with the Band of the Hawk as his army, leading to a final showdown with Guts",
+      "Guts and his group encounter new challenges and foes in a world forever changed by the rise of magic and demons"
+    ],
+    "documents": [228, 515, 673, 799, 1430, 3987, 5705, 9785]
+  }
+]
