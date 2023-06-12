@@ -12,9 +12,11 @@ function extractFileContent(fileName = "animes.csv") {
     inputStream
       .pipe(
         new CsvReadableStream({
+          delimiter: "\t", // default is comma ','
           parseNumbers: true,
           parseBooleans: true,
           trim: true,
+          skipHeader: true,
         })
       )
       .on("data", function (row) {
@@ -89,7 +91,7 @@ function separateDocuments(documents) {
 //execute
 export async function extractAndSave() {
   const csvContent = await extractFileContent("./public/animes.csv");
-  csvContent.splice(0, 1);
+  // csvContent.splice(0, 1);
 
   const documents = await getDocuments(csvContent);
 
@@ -113,4 +115,32 @@ export async function extractAndSave() {
 
   return;
 }
-extractAndSave();
+// extractAndSave();
+
+async function extractImagesUrls() {
+  const csvContent = await extractFileContent("./public/anime_cover_uris.csv");
+  // csvContent.splice(0, 1);
+
+  console.log(csvContent.length);
+  // console.log(csvContent[1]);
+
+  const imagesUrls = csvContent
+    .map((row) => {
+      if (!row[4] || !row[2]) return null;
+      return {
+        title: row[2],
+        url: row[4],
+      };
+    })
+    .filter((row) => !!row);
+
+  console.log(imagesUrls.length);
+  console.log(imagesUrls[0]);
+
+  Fs.writeFileSync(
+    "./public/anime_cover_uris.json",
+    JSON.stringify(imagesUrls, null, 2)
+  );
+}
+
+extractImagesUrls();

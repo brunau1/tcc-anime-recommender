@@ -22,6 +22,7 @@
     "nlp-toolkit": "^0.2.5",
     "num-words": "^1.2.2",
     "string-similarity": "^4.0.4",
+    "string-similarity-js": "^2.1.4",
     "tiny-tfidf": "^0.9.1",
     "vector-space-model-similarity": "^1.0.161"
   }

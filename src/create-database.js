@@ -21,34 +21,15 @@ console.log(animes.names.length, animes.content.length);
 // ];
 
 const titlesToCompare = [
-  "Made in Abyss",
   "haikyuu",
-  "devilman",
   "Naruto",
   "Death note",
-  "Sword Art Online",
-  "Code geas",
   "Bleach",
-  "Fairy Tail",
-  "Nanatsu no Taizai",
-  "One Piece",
   "Dragon Ball",
   "Fullmetal Alchemist",
   "One punch man",
-  "boku no hero academia",
-  "Shingeki no Kyojin",
-  "inuyasha",
   "Saint Seiya",
   "one piece",
-  "hunter x hunter",
-  "hunter",
-  "Evangelion",
-  "sailor moon",
-  "kimetsu no yaiba",
-  "cowboy bebop",
-  "Berserk",
-  "Gundam",
-  "Hakusho",
 ];
 
 // console.log(compareTwoStrings(animes.content[0],  animes.content[1]))
@@ -76,31 +57,36 @@ const titlesToCompare = [
 // console.log("result 2: ", animes.names[5169]);
 // process.exit(0);
 
-// const similarities = {};
-// const documents = [];
-// for (const title of titlesToCompare) {
-//   let index = 0;
-//   let currentSimilarities = [];
-//   const obj = {
-//     title: title,
-//     queries: [],
-//     documents: [],
-//   };
-//   for (let anime of animes.names) {
-//     // const similarity = compareTwoStrings(title, anime);
-//     // if (similarity >= 0.4)
-//     anime = anime.toLowerCase().replace(/[^a-z ]+/g, " ");
+const similarities = {};
+const documents = [];
+for (const title of titlesToCompare) {
+  let index = 0;
+  let currentSimilarities = [];
+  const obj = {
+    title: title,
+    queries: [],
+    documents: [],
+  };
+  for (let anime of animes.names) {
+    // const similarity = compareTwoStrings(title, anime);
+    // if (similarity >= 0.4)
+    anime = anime.toLowerCase().replace(/[^a-z ]+/g, " ");
 
-//     if (anime.includes(title.toLowerCase()) && obj.documents.length < 10) {
-//       obj.documents.push(index);
-//       currentSimilarities.push([index, animes.names[index]]);
-//     }
-//     index++;
-//   }
-//   similarities[title] = currentSimilarities;
-//   documents.push(obj);
-//   index = 0;
-// }
+    if (
+      anime.includes(title.toLowerCase()) &&
+      currentSimilarities.length < 30
+    ) {
+      obj.documents.push(index);
+      currentSimilarities.push([index, animes.names[index]]);
+    }
+    index++;
+  }
+  similarities[title] = currentSimilarities;
+  documents.push(obj);
+
+  currentSimilarities = [];
+  index = 0;
+}
 // titlesToCompare.forEach((title) => {
 //   const sorted = similarities[title].sort((a, b) => b[1] - a[1]);
 //   const titles = sorted.map((s) => {
@@ -108,45 +94,53 @@ const titlesToCompare = [
 //   });
 //   console.log(title, "-->", titles);
 // });
-
-// Fs.writeFileSync(__dirname, "../public/similarities.txt", `${similarities}`);
-// for (const title of titlesToCompare) {
-//   lines += `${title} -->\n`;
-//   for (const anime of similarities[title]) {
-//     lines += `${anime[0]} - ${anime[1]}\n`;
-//   }
-//   lines += "\n\n";
-// }
-
-function saveExpected(documents, setName) {
-  let lines = "";
-
-  for (const doc of documents) {
-    console.log("title: ", animes.names[doc]);
-
-    const text = animes.content[doc].toLowerCase().replace(/[^a-z ]+/g, " ");
-
-    lines += `${doc} - ${animes.names[doc]}\n`;
-    // lines += `${text}\n\n`;
+let lines = "";
+for (const title of titlesToCompare) {
+  lines += `${title} -->\n`;
+  for (const anime of similarities[title]) {
+    lines += `${anime[0]} - ${anime[1]}\n`;
   }
-
-  Fs.writeFileSync(
-    Path.resolve(
-      "..",
-      "tcc-anime-recommender",
-      `public/${setName}-expected.txt`
-    ),
-    lines
-  );
+  lines += "\n\n";
 }
 
-const setName = "saint_seiya";
+Fs.writeFileSync(
+  Path.resolve(
+    "..",
+    "tcc-anime-recommender",
+    "public/similarities.txt"
+  ),
+  lines
+);
 
-const docs = [
-  21, 111, 348, 394, 410, 781, 2940, 3165, 4333, 4920
-];
+// function saveExpected(documents, setName) {
+//   let lines = "";
 
-saveExpected(docs, setName);
+//   for (const doc of documents) {
+//     console.log("title: ", animes.names[doc]);
+
+//     const text = animes.content[doc].toLowerCase().replace(/[^a-z ]+/g, " ");
+
+//     lines += `${doc} - ${animes.names[doc]}\n`;
+//     // lines += `${text}\n\n`;
+//   }
+
+//   Fs.writeFileSync(
+//     Path.resolve(
+//       "..",
+//       "tcc-anime-recommender",
+//       `public/${setName}-expected.txt`
+//     ),
+//     lines
+//   );
+// }
+
+// const setName = "saint_seiya";
+
+// const docs = [
+//   21, 111, 348, 394, 410, 781, 2940, 3165, 4333, 4920
+// ];
+
+// saveExpected(docs, setName);
 
 // Fs.writeFileSync(
 //   Path.resolve("..", "tcc-anime-recommender", "public/train_large.json"),
